@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kor'DulRPG", "Kor'DulRPG.csproj", "{7C901833-59E3-3744-E3A1-54E57398EC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kor'DulRPG", "Kor'DulRPG.csproj", "{7C901833-59E3-3744-E3A1-54E57398EC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kor'DulRPG", "Kor'DulRPG.csproj", "{7C901833-59E3-3744-E3A1-54E57398EC11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kor'DulRPG.Editor", "Kor'DulRPG.Editor.csproj", "{905C31C7-4EB1-420D-F15B-2705F38CEAF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kor'DulRPG.Editor", "Kor'DulRPG.Editor.csproj", "{905C31C7-4EB1-420D-F15B-2705F38CEAF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kor'DulRPG.Editor", "Kor'DulRPG.Editor.csproj", "{905C31C7-4EB1-420D-F15B-2705F38CEAF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C901833-59E3-3744-E3A1-54E57398EC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905C31C7-4EB1-420D-F15B-2705F38CEAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
