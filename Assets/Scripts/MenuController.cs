@@ -6,11 +6,20 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     GameObject scroll;
+    GameObject charSheet;
 
     private void Start()
     {
-        scroll = GameObject.FindGameObjectWithTag("menu");
-        scroll.SetActive(false);
+        if (SceneManager.GetActiveScene().name != "Menu")
+        {
+            scroll = GameObject.FindGameObjectWithTag("menu");
+            scroll.SetActive(false);
+
+            charSheet = GameObject.FindGameObjectWithTag("charSheet");
+            charSheet.SetActive(false);
+        }
+
+       
     }
 
     public void StartGame()
@@ -25,7 +34,7 @@ public class MenuController : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("Menu"); // Start the game when "New Game" it's pushed.
+        SceneManager.LoadScene("Menu"); // Back to the menu
     }
 
     public void ResumeGame()
@@ -33,5 +42,9 @@ public class MenuController : MonoBehaviour
         scroll.SetActive(false);
     }
 
+    public void fadeCharSheet()
+    {
+        charSheet.SetActive(false);
+    }
 
 }

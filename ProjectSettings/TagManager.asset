@@ -7,6 +7,8 @@ TagManager:
   - menu
   - forestEntry
   - townEntry
+  - charSheet
+  - slime
   layers:
   - Default
   - TransparentFX
