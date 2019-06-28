@@ -12,7 +12,7 @@ public class FightController : MonoBehaviour
     GameObject enemy;
     public GameObject slime;
     public GameObject character;
-    bool playerTurn;
+    public bool playerTurn;
     bool preventive;
     bool defending;
     int damage;
@@ -41,7 +41,6 @@ public class FightController : MonoBehaviour
     void Start()
     {
 
-        healthBarPlayer.fillAmount = 1;
         healthBarEnemy.fillAmount = 1;
         preventive = false;
         defending = false;
@@ -51,6 +50,9 @@ public class FightController : MonoBehaviour
 
         eb = enemy.GetComponent<EnemyBehaviour>();
         pc = character.GetComponent<PlayerController>();
+
+        playerHealth.text = pc.actualLife + " / " + pc.life;
+        healthBarPlayer.fillAmount = (float)((pc.actualLife * 100) / pc.life) / 100;
 
         logText1.text = "A wild " + eb.monsterName + " appeared.";
         logText2.text = " ";
@@ -137,6 +139,7 @@ public class FightController : MonoBehaviour
         {
             if (UnityEngine.Random.Range(0, 10) <= 2)
             {
+                pc.SaveData();
                 SceneManager.LoadScene("Forest");   //Player Scaped.
             }
             else
@@ -170,7 +173,11 @@ public class FightController : MonoBehaviour
         {
             if (UnityEngine.Random.Range(0, 1000) <= pc.critical * 10)
             {
+                if(pc.usingSword == true)
                 damage = (pc.str + (UnityEngine.Random.Range(-pc.str / 5, pc.str / 5))* 5);
+                else
+                    damage = (pc.dex + (UnityEngine.Random.Range(-pc.dex / 5, pc.dex / 5)) * 5);
+
                 logText4.text = logText3.text;
                 logText3.text = logText2.text;
                 logText2.text = logText1.text;
@@ -178,7 +185,11 @@ public class FightController : MonoBehaviour
             }
             else
             {
+                if(pc.usingSword == true)
                 damage = (pc.str + (UnityEngine.Random.Range(-pc.str / 5, pc.str / 5))* 3);
+                else
+                    damage = (pc.dex + (UnityEngine.Random.Range(-pc.dex / 5, pc.dex / 5)) * 3);
+
                 logText4.text = logText3.text;
                 logText3.text = logText2.text;
                 logText2.text = logText1.text;
@@ -188,7 +199,13 @@ public class FightController : MonoBehaviour
 
             if (eb.remainingLife <= 0) //enemy is dead.
             {
+
+                if (pc.idQuest == 2 && enemy.tag.Equals("slime"))
+                    pc.countQuest++;
+
+
                 pc.addExperience(eb.experienceGiven);
+                pc.SaveData();
                 SceneManager.LoadScene("Forest");
 
             }

@@ -2836,6 +2836,72 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1858159533}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1870173407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870173409}
+  - component: {fileID: 1870173408}
+  m_Layer: 0
+  m_Name: CharacterController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1870173408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870173407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ce97ad547362942bc26928b2f165b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  str: 0
+  dex: 0
+  mag: 0
+  agi: 0
+  luc: 0
+  sta: 0
+  level: 0
+  remainingLevels: 0
+  experience: 0
+  experienceRequired: 0
+  actualLife: 0
+  life: 0
+  energy: 0
+  energyRate: 0
+  critical: 0
+  dodge: 0
+  idQuest: 0
+  textQuest: 
+  countQuest: 0
+  requiredQuest: 0
+  inventory:
+  - {fileID: 2925153319100634920, guid: 7792a8fe2ad35d044bffc8f7cd6c8fbd, type: 3}
+  - {fileID: 5468022483047136474, guid: 7a63cddd8eba5db4692ff37c46a0bbf1, type: 3}
+--- !u!4 &1870173409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870173407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6362988, y: -1.0190362, z: -0.1015625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1883643739
 PrefabInstance:
   m_ObjectHideFlags: 0

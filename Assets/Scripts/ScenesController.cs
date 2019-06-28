@@ -7,12 +7,18 @@ public class ScenesController : MonoBehaviour
 {
     float old_pos_x;
     float old_pos_y;
+    public GameObject character;
+    PlayerController pc;
 
     private void Start()
     {
 
         old_pos_x = GameObject.FindGameObjectWithTag("Player").transform.position.x;
         old_pos_y = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+
+        pc = character.GetComponent<PlayerController>();
+
+
     }
 
 
@@ -20,11 +26,13 @@ public class ScenesController : MonoBehaviour
     {
         if (this.gameObject.tag.Equals("forestEntry") && "Player".Equals(collision.gameObject.tag))
         {
+            pc.SaveData();
             SceneManager.LoadScene("Forest");
         }
 
         if (this.gameObject.tag.Equals("townEntry") && "Player".Equals(collision.gameObject.tag))
         {
+            pc.SaveData();
             SceneManager.LoadScene("Town");
         }
 
@@ -42,6 +50,7 @@ public class ScenesController : MonoBehaviour
                 {
                     old_pos_x = GameObject.FindGameObjectWithTag("Player").transform.position.x;
                     old_pos_y = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+                    pc.SaveData();
                     SceneManager.LoadScene("ForestFight");
                 }
 
