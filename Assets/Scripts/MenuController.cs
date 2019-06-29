@@ -16,6 +16,7 @@ public class MenuController : MonoBehaviour
     public PlayerController pc;
     GameObject shop;
     GameObject equipment;
+    GameObject settings;
 
     private void Start()
     {
@@ -45,20 +46,42 @@ public class MenuController : MonoBehaviour
 
                 questTracker = GameObject.FindGameObjectWithTag("questTracker");
 
-                scroll = GameObject.FindGameObjectWithTag("menu");
-                scroll.SetActive(false);
+
                 menuBar = GameObject.FindGameObjectWithTag("optionsBar");
 
                 equipment = GameObject.FindGameObjectWithTag("equipment");
                 equipment.SetActive(false);
+
+
             }
+        }
+            if (SceneManager.GetActiveScene().name != "ForestFight")
+            {
+                settings = GameObject.FindGameObjectWithTag("settings");
+                settings.SetActive(false);
+                scroll = GameObject.FindGameObjectWithTag("menu");
 
+            if(SceneManager.GetActiveScene().name != "Menu")
+                scroll.SetActive(false);
 
+        }
+        
 
         }
 
-       
+
+    public void quitSettings()
+    {
+        settings.SetActive(false);
+        scroll.SetActive(true);
     }
+
+    public void showSettings()
+    {
+        settings.SetActive(true);
+        scroll.SetActive(false);
+    }
+
 
     public void StartGame()
     {

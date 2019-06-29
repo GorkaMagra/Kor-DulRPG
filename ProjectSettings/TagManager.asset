@@ -21,6 +21,7 @@ TagManager:
   - shopSlot
   - shop
   - equipment
+  - settings
   layers:
   - Default
   - TransparentFX
