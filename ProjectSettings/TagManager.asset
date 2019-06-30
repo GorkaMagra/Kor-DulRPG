@@ -7,6 +7,21 @@ TagManager:
   - menu
   - forestEntry
   - townEntry
+  - charSheet
+  - slime
+  - lucius
+  - chatBox
+  - optionsBar
+  - questTracker
+  - clarissa
+  - potion
+  - elixir
+  - inventory
+  - grid
+  - shopSlot
+  - shop
+  - equipment
+  - settings
   layers:
   - Default
   - TransparentFX
