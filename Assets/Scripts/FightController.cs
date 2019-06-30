@@ -203,7 +203,7 @@ public class FightController : MonoBehaviour
                 if (pc.idQuest == 2 && enemy.tag.Equals("slime"))
                     pc.countQuest++;
 
-
+                pc.gold += eb.droppedMoney;
                 pc.addExperience(eb.experienceGiven);
                 pc.SaveData();
                 SceneManager.LoadScene("Forest");

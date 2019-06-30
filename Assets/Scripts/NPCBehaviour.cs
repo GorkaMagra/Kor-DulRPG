@@ -11,7 +11,7 @@ public class NPCBehaviour : MonoBehaviour
     public GameObject textBar;
     public GameObject menubar;
     public GameObject shopPanel;
-    MenuController mc;
+    public MenuController mc;
     public TextMeshProUGUI chatTitle;
     public TextMeshProUGUI chatText;
     public bool talkingAvailable;

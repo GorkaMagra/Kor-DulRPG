@@ -122,10 +122,12 @@ public class PlayerController : MonoBehaviour
         {
             UpdateStats();
             Movement();
+
+            if (idQuest == 2)
+                questTxt.text = "Kill slimes " + countQuest + " / " + requiredQuest;
         }
 
-        if (idQuest == 2)
-            questTxt.text = "Kill slimes " + countQuest + " / " + requiredQuest;
+
 
 
 
